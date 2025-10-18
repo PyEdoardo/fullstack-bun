@@ -1,5 +1,9 @@
 import type { Request, Response } from "@tinyhttp/app";
 
-export const getUsers = (req: Request, res: Response) => {
+export const responder = (req: Request, res: Response) => {
+    try {
 
+    } catch (exception) {
+        res.json({erro: ""});
+    }
 };
